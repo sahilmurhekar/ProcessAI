@@ -1,0 +1,14 @@
+streamlit
+pandas
+plotly
+time
+numpy
+scikit-learn
+matplotlib
+seaborn
+imblearn
+os
+scipy
+logging
+nltk
+re
