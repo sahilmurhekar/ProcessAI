@@ -5,8 +5,3 @@ scikit-learn
 matplotlib
 seaborn
 imblearn
-os
-scipy
-logging
-nltk
-re
