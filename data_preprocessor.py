@@ -99,6 +99,35 @@ class DataPreprocessor:
             logging.error(f"Failed to initialize: {e}")
             raise
 
+
+    def get_pipeline_code(self):
+        lines = ["import pandas as pd"]
+        lines.append("df = pd.read_csv('your_file.csv')")
+
+        if hasattr(self, 'steps'):
+            for step, val in self.steps.items():
+                if step == "deleted":
+                    lines.append(f"df.drop(columns={val}, inplace=True)")
+                elif step == "deduplicated":
+                    lines.append("df.drop_duplicates(inplace=True)")
+                elif step == "null_handled":
+                    for col, strat in val.items():
+                        if strat["strategy"] == "mean":
+                            lines.append(f"df['{col}'].fillna(df['{col}'].mean(), inplace=True)")
+                        elif strat["strategy"] == "median":
+                            lines.append(f"df['{col}'].fillna(df['{col}'].median(), inplace=True)")
+                        elif strat["strategy"] == "most_frequent":
+                            lines.append(f"df['{col}'].fillna(df['{col}'].mode()[0], inplace=True)")
+                        elif strat["strategy"] == "constant":
+                            lines.append(f"df['{col}'].fillna({strat['fill_value']}, inplace=True)")
+                        elif strat["strategy"] == "drop":
+                            lines.append(f"df.dropna(subset=['{col}'], inplace=True)")
+                # Add code generation for other steps similarly
+
+        lines.append("df.to_csv('processed_output.csv', index=False)")
+        return "\n".join(lines)
+
+
     def handle_null_values(self, columns, strategy='mean', fill_value=None):
         """Handle missing values in specified columns."""
         try:
