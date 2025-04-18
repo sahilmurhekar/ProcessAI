@@ -68,3 +68,54 @@
 2025-04-17 13:22:43,678 - INFO - Initialized DataPreprocessor
 2025-04-17 13:22:43,680 - INFO - Updated column types
 2025-04-17 13:22:43,680 - INFO - Deleted columns: ['Name']
+2025-04-18 14:44:15,853 - INFO - Initialized DataPreprocessor
+2025-04-18 14:44:15,855 - INFO - Updated column types
+2025-04-18 14:44:15,855 - INFO - Deleted columns: ['Name']
+2025-04-18 14:44:15,858 - INFO - Updated column types
+2025-04-18 14:44:15,858 - INFO - Handled null values in columns ['Age'] with strategy: mean
+2025-04-18 14:44:15,861 - INFO - Updated column types
+2025-04-18 14:44:15,861 - INFO - Handled null values in columns ['Fare'] with strategy: mean
+2025-04-18 14:44:15,865 - INFO - Updated column types
+2025-04-18 14:44:15,866 - INFO - Handled null values in columns ['Cabin'] with strategy: most_frequent
+2025-04-18 14:44:15,868 - INFO - Updated column types
+2025-04-18 14:44:15,868 - INFO - Encoded categorical columns: ['Sex', 'Embarked'] using label
+2025-04-18 14:44:58,876 - INFO - Initialized DataPreprocessor
+2025-04-18 14:44:58,877 - INFO - Updated column types
+2025-04-18 14:44:58,877 - INFO - Deleted columns: ['Name']
+2025-04-18 14:46:00,860 - INFO - Initialized DataPreprocessor
+2025-04-18 14:46:00,862 - INFO - Updated column types
+2025-04-18 14:46:00,862 - INFO - Deleted columns: ['Name']
+2025-04-18 14:48:23,909 - INFO - Initialized DataPreprocessor
+2025-04-18 14:48:23,910 - INFO - Updated column types
+2025-04-18 14:48:23,910 - INFO - Deleted columns: ['Name']
+2025-04-18 14:56:19,341 - INFO - Initialized DataPreprocessor
+2025-04-18 14:56:19,344 - INFO - Updated column types
+2025-04-18 14:56:19,344 - INFO - Deleted columns: ['Name']
+2025-04-18 14:57:29,350 - INFO - Initialized DataPreprocessor
+2025-04-18 14:57:29,351 - INFO - Updated column types
+2025-04-18 14:57:29,351 - INFO - Deleted columns: ['Name']
+2025-04-18 14:58:03,901 - INFO - Initialized DataPreprocessor
+2025-04-18 14:58:03,906 - INFO - Updated column types
+2025-04-18 14:58:03,906 - INFO - Handled null values in columns ['Age'] with strategy: mean
+2025-04-18 14:58:03,908 - INFO - Updated column types
+2025-04-18 14:58:03,908 - INFO - Handled null values in columns ['Cabin'] with strategy: most_frequent
+2025-04-18 14:58:03,911 - INFO - Updated column types
+2025-04-18 14:58:03,911 - INFO - Handled null values in columns ['Fare'] with strategy: mean
+2025-04-18 14:58:43,374 - INFO - Initialized DataPreprocessor
+2025-04-18 14:58:43,377 - INFO - Updated column types
+2025-04-18 14:58:43,377 - INFO - Handled null values in columns ['Age'] with strategy: mean
+2025-04-18 14:58:43,379 - INFO - Updated column types
+2025-04-18 14:58:43,380 - INFO - Handled null values in columns ['Cabin'] with strategy: most_frequent
+2025-04-18 14:58:43,382 - INFO - Updated column types
+2025-04-18 14:58:43,383 - INFO - Handled null values in columns ['Fare'] with strategy: mean
+2025-04-18 14:58:43,387 - INFO - Updated column types
+2025-04-18 14:58:43,387 - INFO - Encoded categorical columns: ['Cabin', 'Embarked', 'Sex', 'Ticket'] using label
+2025-04-18 15:01:54,486 - INFO - Initialized DataPreprocessor
+2025-04-18 15:01:54,489 - INFO - Updated column types
+2025-04-18 15:01:54,489 - INFO - Deleted columns: ['Name']
+2025-04-18 15:05:06,942 - INFO - Initialized DataPreprocessor
+2025-04-18 15:05:06,944 - INFO - Updated column types
+2025-04-18 15:05:06,944 - INFO - Deleted columns: ['Name']
+2025-04-18 15:21:47,380 - INFO - Initialized DataPreprocessor
+2025-04-18 15:21:47,382 - INFO - Updated column types
+2025-04-18 15:21:47,382 - INFO - Deleted columns: ['Name']
